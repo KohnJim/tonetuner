@@ -1,3 +1,5 @@
+# by Jooyoung (John) Kim
+
 import sounddevice                                      # for accessing microphone
 import os                                               # for clearing console
 import numpy as np                                      # for sampling audio
@@ -34,4 +36,3 @@ with sounddevice.InputStream(channels=2, callback = run, blocksize=22050, sample
             
     except KeyboardInterrupt:                           # ctrl + c to terminate the program and prevent KeyboardInterrupt error
         pass
-  
